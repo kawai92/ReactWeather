@@ -10,7 +10,7 @@ app.use(function(req, res, next){
     next();
   }
   else{
-    resp.redirect('http://' + req.hostname + req.url)
+    res.redirect('http://' + req.hostname + req.url)
   }
 });
 
